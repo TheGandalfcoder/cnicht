@@ -16,12 +16,14 @@
 <body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen dark:bg-gray-900 dark:text-gray-100">
     <!-- Header/Nav -->
     <header class="bg-white shadow dark:bg-gray-800 dark:shadow-lg">
-
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-between py-4 px-6">
-            <div class="flex flex-col md:flex-row md:items-center md:space-x-6 text-center md:text-left">
-                <span class="font-bold text-2xl text-green-700">Cnicht Cleaning Services</span>
-                <span class="text-sm mt-2 md:mt-0">07717 882687</span>
-                <span class="text-sm">info@cnichtcleaningservices.uk</span>
+            <div class="flex flex-col md:flex-row md:items-center md:space-x-6 text-center md:text-left w-full justify-center items-center md:justify-start md:items-center">
+                <img src="image/logo.png" alt="Cnicht Cleaning Services Logo" class="h-20 w-20 mb-2 md:mb-0 md:mr-3 inline-block align-middle" style="object-fit:contain;" />
+                <div class="flex flex-col items-center md:items-start">
+                    <span class="font-bold text-2xl text-green-700" data-translate-key="site_title">Cnicht Cleaning Services</span>
+                    <span class="text-sm mt-2 md:mt-0" data-translate-key="phone">07717 882687</span>
+                    <span class="text-sm" data-translate-key="email">info@cnichtcleaningservices.uk</span>
+                </div>
             </div>
         </div>
     </header>
@@ -29,10 +31,20 @@
     <nav class="bg-white shadow w-full relative sticky top-0 z-50 dark:bg-gray-800 dark:shadow-lg">
         <div class="container mx-auto flex justify-between items-center py-3 px-6">
             <div class="flex space-x-4">
-                <a href="index.html" class="text-green-700 hover:underline dark:text-green-300">Home</a>
-                <a href="services.html" class="text-green-700 hover:underline dark:text-green-300">Services</a>
-                <a href="gallery.html" class="text-green-700 hover:underline font-bold dark:text-green-300">Gallery</a>
-                <a href="contact.html" class="text-green-700 hover:underline dark:text-green-300">Contact</a>
+                <a href="index.html" class="text-green-700 hover:underline dark:text-green-300" data-translate-key="nav_home">Home</a>
+                <a href="services.html" class="text-green-700 hover:underline dark:text-green-300" data-translate-key="nav_services">Services</a>
+                <a href="gallery.html" class="text-green-700 hover:underline font-bold dark:text-green-300" data-translate-key="nav_gallery">Gallery</a>
+                <a href="contact.html" class="text-green-700 hover:underline dark:text-green-300" data-translate-key="nav_contact">Contact</a>
+            </div>
+            <!-- Language Toggle Slide Switch -->
+            <div class="flex items-center gap-3">
+                <span id="langLabelEn" class="font-semibold transition-colors duration-300"></span>
+                <button id="translateToggle" class="relative inline-flex h-9 w-20 items-center rounded-full bg-gray-300 dark:bg-gray-600 transition-colors duration-300 ring-2 ring-transparent focus:outline-none focus:ring-green-400 focus:ring-offset-2 dark:focus:ring-offset-gray-900">
+                    <span id="langToggleThumb" class="inline-block h-8 w-8 transform rounded-full bg-white dark:bg-gray-100 shadow-md transition-transform duration-300 ease-in-out flex items-center justify-center translate-x-1" style="transition: transform 0.3s ease;">
+                        <span id="langToggleIcon" class="text-green-700 dark:text-green-300 font-bold text-sm"></span>
+                    </span>
+                </button>
+                <span id="langLabelCy" class="font-semibold transition-colors duration-300"></span>
             </div>
             <!-- Dark Mode Toggle Button -->
             <button id="darkModeToggle" class="relative inline-flex h-8 w-14 items-center rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
@@ -43,39 +55,39 @@
         </div>
     </nav>
     <main class="flex-1 container mx-auto px-4 py-8 max-w-5xl dark:bg-gray-900 dark:text-gray-100">
-        <h1 class="text-3xl font-bold text-center text-green-700 mb-8 dark:text-green-300 fade-in">Gallery of Previous Work</h1>
+        <h1 class="text-3xl font-bold text-center text-green-700 mb-8 dark:text-green-300 fade-in" data-translate-key="gallery_title">Gallery of Previous Work</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             <div class="flex flex-col items-center bg-white rounded-lg shadow dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-1">
                 <img src="image/gal1.jpg" alt="Previous Work 1" class="rounded shadow cursor-pointer gallery-thumb" data-img="image/gal1.jpg"/>
-                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300">Previous Work</span>
+                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300" data-translate-key="gallery_img1">Previous Work</span>
             </div>
             <div class="flex flex-col items-center bg-white rounded-lg shadow dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-2">
                 <img src="image/gal2.jpg" alt="Previous Work 2" class="rounded shadow cursor-pointer gallery-thumb" data-img="image/gal2.jpg"/>
-                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300">Previous Work</span>
+                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300" data-translate-key="gallery_img2">Previous Work</span>
             </div>
             <div class="flex flex-col items-center bg-white rounded-lg shadow dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-3">
                 <img src="image/gal3.jpg" alt="Previous Work 3" class="rounded shadow cursor-pointer gallery-thumb" data-img="image/gal3.jpg"/>
-                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300">Previous Work</span>
+                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300" data-translate-key="gallery_img3">Previous Work</span>
             </div>
             <div class="flex flex-col items-center bg-white rounded-lg shadow dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-4">
                 <img src="image/gal4.jpg" alt="Previous Work 4" class="rounded shadow cursor-pointer gallery-thumb" data-img="image/gal4.jpg"/>
-                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300">Previous Work</span>
+                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300" data-translate-key="gallery_img4">Previous Work</span>
             </div>
             <div class="flex flex-col items-center bg-white rounded-lg shadow dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-5">
                 <img src="image/gal5.jpg" alt="Previous Work 5" class="rounded shadow cursor-pointer gallery-thumb" data-img="image/gal5.jpg"/>
-                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300">Previous Work</span>
+                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300" data-translate-key="gallery_img5">Previous Work</span>
             </div>
             <div class="flex flex-col items-center bg-white rounded-lg shadow dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-1">
                 <img src="image/gal6.jpg" alt="Previous Work 6" class="rounded shadow cursor-pointer gallery-thumb" data-img="image/gal6.jpg"/>
-                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300">Previous Work</span>
+                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300" data-translate-key="gallery_img6">Previous Work</span>
             </div>
             <div class="flex flex-col items-center bg-white rounded-lg shadow dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-2">
                 <img src="image/gal7.jpg" alt="Previous Work 7" class="rounded shadow cursor-pointer gallery-thumb" data-img="image/gal7.jpg"/>
-                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300">Previous Work</span>
+                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300" data-translate-key="gallery_img7">Previous Work</span>
             </div>
             <div class="flex flex-col items-center bg-white rounded-lg shadow dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-3">
                 <img src="image/gal8.jpg" alt="Previous Work 8" class="rounded shadow cursor-pointer gallery-thumb" data-img="image/gal8.jpg"/>
-                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300">Previous Work</span>
+                <span class="text-sm text-gray-500 mt-2 dark:text-gray-300" data-translate-key="gallery_img8">Previous Work</span>
             </div>
         </div>
         <!-- Modal for large image -->
@@ -159,8 +171,87 @@
                 });
             });
         </script>
-        
-        
-
+        <script>
+        const translations = {
+          en: {
+            site_title: "Cnicht Cleaning Services",
+            phone: "07717 882687",
+            email: "info@cnichtcleaningservices.uk",
+            nav_home: "Home",
+            nav_services: "Services",
+            nav_gallery: "Gallery",
+            nav_contact: "Contact",
+            gallery_title: "Gallery of Previous Work",
+            gallery_img1: "Previous Work",
+            gallery_img2: "Previous Work",
+            gallery_img3: "Previous Work",
+            gallery_img4: "Previous Work",
+            gallery_img5: "Previous Work",
+            gallery_img6: "Previous Work",
+            gallery_img7: "Previous Work",
+            gallery_img8: "Previous Work",
+            // Add all other keys and English text here
+          },
+          cy: {
+            site_title: "Gwasanaethau Glanhau Cnicht",
+            phone: "07717 882687",
+            email: "info@cnichtcleaningservices.uk",
+            nav_home: "Hafan",
+            nav_services: "Gwasanaethau",
+            nav_gallery: "Oriel",
+            nav_contact: "Cysylltu",
+            gallery_title: "Gallery of Previous Work",
+            gallery_img1: "Gorffen",
+            gallery_img2: "Gorffen",
+            gallery_img3: "Gorffen",
+            gallery_img4: "Gorffen",
+            gallery_img5: "Gorffen",
+            gallery_img6: "Gorffen",
+            gallery_img7: "Gorffen",
+            gallery_img8: "Gorffen",
+            // Add all other keys and Welsh text here
+          }
+        };
+        function setLanguage(lang) {
+          document.documentElement.lang = lang;
+          localStorage.setItem('lang', lang);
+          document.querySelectorAll('[data-translate-key]').forEach(el => {
+            const key = el.getAttribute('data-translate-key');
+            if (translations[lang][key]) {
+              el.textContent = translations[lang][key];
+            }
+          });
+          document.getElementById('translateToggle').textContent = lang === 'en' ? 'Cymraeg' : 'English';
+        }
+        document.getElementById('translateToggle').addEventListener('click', () => {
+          const currentLang = localStorage.getItem('lang') || 'en';
+          setLanguage(currentLang === 'en' ? 'cy' : 'en');
+        });
+        setLanguage(localStorage.getItem('lang') || 'en');
+        </script>
+        <script>
+        // Language toggle slide switch logic
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggle = document.getElementById("translateToggle");
+            const thumb = document.getElementById("langToggleThumb");
+            const icon = document.getElementById("langToggleIcon");
+            let lang = localStorage.getItem('lang') || 'en';
+            function updateLangToggleUI(lang) {
+                if (lang === 'cy') {
+                    thumb.style.transform = 'translateX(48px)';
+                    icon.textContent = 'CY';
+                } else {
+                    thumb.style.transform = 'translateX(4px)';
+                    icon.textContent = 'EN';
+                }
+            }
+            toggle.addEventListener("click", () => {
+                lang = lang === "en" ? "cy" : "en";
+                setLanguage(lang);
+                updateLangToggleUI(lang);
+            });
+            updateLangToggleUI(lang);
+        });
+        </script>
 </body>
 </html> 
