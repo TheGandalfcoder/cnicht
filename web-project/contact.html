@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Cnicht Cleaning Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+      }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen dark:bg-gray-900 dark:text-gray-100">
+    <!-- Header/Nav -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between py-4 px-6">
+            <div class="flex flex-col md:flex-row md:items-center md:space-x-6 text-center md:text-left">
+                <span class="font-bold text-2xl text-green-700">Cnicht Cleaning Services</span>
+                <span class="text-sm mt-2 md:mt-0">07717 882687</span>
+                <span class="text-sm">info@cnichtcleaningservices.uk</span>
+            </div>
+        </div>
+    </header>
+    <!-- Consistent Navigation Bar -->
+    <nav class="bg-white shadow w-full relative sticky top-0 z-50 dark:bg-gray-800 dark:shadow-lg">
+        <div class="container mx-auto flex justify-between items-center py-3 px-6">
+            <div class="flex space-x-4">
+                <a href="index.html" class="text-green-700 hover:underline dark:text-green-300">Home</a>
+                <a href="services.html" class="text-green-700 hover:underline dark:text-green-300">Services</a>
+                <a href="gallery.html" class="text-green-700 hover:underline dark:text-green-300">Gallery</a>
+                <a href="contact.html" class="text-green-700 hover:underline font-bold dark:text-green-300">Contact</a>
+            </div>
+            <!-- Dark Mode Toggle Button -->
+            <button id="darkModeToggle" class="relative inline-flex h-8 w-14 items-center rounded-full bg-gray-200 dark:bg-gray-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
+                <span class="inline-block h-6 w-6 transform rounded-full bg-white shadow-lg ring-0 transition-transform duration-300 ease-in-out" id="toggleIcon">
+                    <!-- Sun/Moon SVG will be injected here -->
+                </span>
+            </button>
+        </div>
+    </nav>
+    <main class="flex-1 container mx-auto px-4 py-8 max-w-3xl dark:bg-gray-900 dark:text-gray-100">
+        <h1 class="text-3xl font-bold text-center text-green-700 mb-8 dark:text-green-300 fade-in">Contact Us</h1>
+        <div class="bg-white rounded-lg shadow p-6 mb-8 dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-1">
+            <h2 class="text-xl font-semibold mb-4 dark:text-green-300">Get in Touch</h2>
+            <form action="https://formspree.io/f/xblypbng" method="POST" class="space-y-4">
+                <div>
+                    <label for="name" class="block font-medium dark:text-gray-200">Name</label>
+                    <input type="text" id="name" name="name" required class="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-green-400 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700">
+                </div>
+                <div>
+                    <label for="email" class="block font-medium dark:text-gray-200">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-green-400 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700">
+                </div>
+                <div>
+                    <label for="message" class="block font-medium dark:text-gray-200">Message</label>
+                    <textarea id="message" name="message" rows="4" required class="w-full border rounded px-3 py-2 mt-1 focus:outline-none focus:ring-2 focus:ring-green-400 dark:bg-gray-900 dark:text-gray-100 dark:border-gray-700"></textarea>
+                </div>
+                <button type="submit" class="bg-green-600 text-white px-6 py-2 rounded shadow hover:bg-green-700 dark:bg-green-800 dark:hover:bg-green-900">Send Message</button>
+            </form>
+            <div class="mt-4 text-green-600 font-semibold hidden" id="formSuccess">Thank you for contacting us! We'll get back to you soon.</div>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6 mb-8 dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-2">
+            <h2 class="text-xl font-semibold mb-4 dark:text-green-300">Contact Information</h2>
+            <div class="space-y-2">
+                <div><span class="font-semibold">Phone:</span> 07717 882687</div>
+                <div><span class="font-semibold">Email:</span> info@cnichtcleaningservices.uk</div>
+                <div><span class="font-semibold">Address:</span> The Old Smithy, Garreg Terrace, LLanfrothen, Gwynedd, LL48 6AQ</div>
+            </div>
+        </div>
+        <div class="bg-white rounded-lg shadow p-4 mb-8 dark:bg-gray-800 dark:shadow-lg fade-in fade-in-delay-3">
+            <h2 class="text-xl font-semibold mb-4 dark:text-green-300">Find Us</h2>
+            <div class="w-full h-72 md:h-[450px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2403.62487739335!2d-4.066756499999999!3d52.955172499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48650ba2c4c4709d%3A0xbe2110ef81789ad7!2sCnicht%20Cleaning%20Services!5e0!3m2!1sen!2suk!4v1750942351083!5m2!1sen!2suk" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-gray-200 py-4 mt-auto dark:bg-black dark:text-gray-300">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+            <span>© Copyright 2025 | Privacy Policy</span>
+            <span>Cnicht Cleaning Services</span>
+        </div>
+    </footer>
+    <script>
+        // Scroll-triggered fade-in animation
+        function handleScrollAnimation() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            fadeElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150; // Trigger when element is 150px from viewport
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        // Initial check for elements already in view
+        handleScrollAnimation();
+        
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScrollAnimation);
+
+        // Dark mode toggle logic
+        const toggleBtn = document.getElementById('darkModeToggle');
+        const toggleIcon = document.getElementById('toggleIcon');
+        const html = document.documentElement;
+        let dark = localStorage.getItem('darkMode') === 'true';
+        function setIcon() {
+            if (dark) {
+                toggleIcon.innerHTML = `<svg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5 text-gray-200' fill='none' viewBox='0 0 24 24' stroke='currentColor'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z' /></svg>`;
+                toggleIcon.style.transform = 'translateX(28px)';
+                html.classList.add('dark');
+            } else {
+                toggleIcon.innerHTML = `<svg xmlns='http://www.w3.org/2000/svg' class='h-5 w-5 text-yellow-500' fill='none' viewBox='0 0 24 24' stroke='currentColor'><circle cx='12' cy='12' r='5' stroke='currentColor' stroke-width='2' fill='currentColor'/><path stroke='currentColor' stroke-width='2' d='M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42'/></svg>`;
+                toggleIcon.style.transform = 'translateX(0)';
+                html.classList.remove('dark');
+            }
+        }
+        setIcon();
+        toggleBtn.addEventListener('click', () => {
+            dark = !dark;
+            localStorage.setItem('darkMode', dark);
+            setIcon();
+        });
+    </script>
+</body>
+</html> 
